@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\API\KitabController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -16,4 +18,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
+});
+
+Route::get('/kitab', [KitabController::class, 'index']);
+
+Route::group(['prefix' => 'kitab/{kitab}'], function () {
+    Route::get('/', [KitabController::class, 'show']);
+    Route::get('/{bahasan}', [KitabController::class, 'showDetail']);
 });
