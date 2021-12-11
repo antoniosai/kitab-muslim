@@ -1,0 +1,43 @@
+.btn {
+    border-radius: 13px;
+}
+
+.jumbotron {
+    border-radius: 13px;
+}
+
+.card {
+    border-radius: 13px;
+    text-align: center;
+}
+
+
+.form-control {
+    border-radius: 13px;
+}
+
+.my-item {
+    font-size: 12px;
+}
+
+.btn-success {
+    background-color: #004d40;
+    border-color: #005b4f;
+}
+
+.nav-item>a {
+    background-color: #004d40;
+    color: white;
+    border-radius: 13px;
+    margin: 5px;
+}
+
+.navbar {
+    border-style: none;
+    border-width: 0 1px 4px 1px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right, #1f4037, #009688);
+}
